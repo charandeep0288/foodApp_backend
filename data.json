@@ -1,0 +1,17 @@
+[
+    {
+        "name": "charandeep",
+        "email": "abc@gmail.com",
+        "password": 1234567890
+    },
+    {
+        "name": "charandeep",
+        "email": "abc@gmail.com",
+        "password": "1sa234567890"
+    },
+    {
+        "name": "charandeep",
+        "email": "abdwc@gmail.com",
+        "password": "1sa234567890"
+    }
+]

@@ -1,0 +1,23 @@
+{
+  "name": "foodapp_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app1.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.11",
+    "nodemailer": "^6.7.0",
+    "nodemon": "^2.0.13",
+    "razorpay": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app1.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
