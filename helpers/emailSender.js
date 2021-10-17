@@ -1,6 +1,7 @@
 // nodemailer -> mail
 const nodemailer = require("nodemailer");
-const { APP_PASSWORD } = require("../secrets");
+// const { APP_PASSWORD } = require("../secrets");
+const { APP_PASSWORD } = processs.env;
 // async..await is not allowed in global scope, must use a wrapper
 module.exports = async function main(token, userEmail) {
     // Generate test SMTP service account from ethereal.email
