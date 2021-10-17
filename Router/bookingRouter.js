@@ -5,7 +5,7 @@ const userModel = require("../model/userModel");
 const { protectRoute } = require("./utilFns");
 const { getElement, getElements, updateElement } = require("../helpers/factory");
 const Razerpay = require("razorpay");
-let { KEY_ID, KEY_SECRET } = require("../secrets");
+let { KEY_ID, KEY_SECRET } = process.env;
 var razorpay = new Razerpay({
     key_id: KEY_ID,
     key_secret: KEY_SECRET,

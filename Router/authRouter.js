@@ -2,7 +2,8 @@
 // express
 const express = require("express");
 const jwt = require("jsonwebtoken");
-const { JWT_SECRET } = require("../secrets");
+// const { JWT_SECRET } = require("../secrets");
+const { JWT_SECRET } = process.env;
 const userModel = require("../model/userModel");
 const { bodyChecker } = require("./utilFns");
 const emailSender = require("../helpers/emailSender");

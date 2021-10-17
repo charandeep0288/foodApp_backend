@@ -42,7 +42,8 @@ app.use("/api/auth", authRouter);
 app.use("/api/review", reviewRouter);
 app.use("/api/booking", bookingRouter);
 
-app.listen(8081, function () {
+// heroku physical -> multiple server run
+app.listen(process.env.PORT || 8081, function () {
   console.log("server started");
 });
 

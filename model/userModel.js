@@ -5,7 +5,16 @@ const mongoose = require("mongoose");
 
 const validator = require("email-validator");
 
-let { db_link } = require("../secrets");
+// let { db_link } = process.env;
+ 
+let db_link;
+// deployed
+if(process.env.db_link) {
+    db_link = process.env.db_link;
+} else {
+    // local
+    db_link = require("../secrets").db_link;
+}
 
 // this as promise based fn
 mongoose.connect(db_link)

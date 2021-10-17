@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const validator = require("email-validator");
 
-let { db_link } = require("../secrets");
+let { db_link } = process.env;
 
 // this as promise based fn
 mongoose
